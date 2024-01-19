@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+<bean class="com.kn.Spring5.Car" id="car1" autowire="byName">
+</bean>
+<bean class="com.kn.Spring5.Engine" id="eng">
+	<property name="engno" value="001"></property>
+	<property name="engType" value="3 stock engine"></property>
+</bean>
+<bean class="com.kn.Spring5.Engine" id="eng2">
+	<property name="engno" value="002"></property>
+	<property name="engType" value="4 stock engine"></property>
+</bean>
+</beans>

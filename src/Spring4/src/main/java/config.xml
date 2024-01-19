@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+<bean class="com.kn.Spring4.Person" id="per1">
+	<property name="m" ref="mv2"></property>
+</bean>
+<bean class="com.kn.Spring4.Mobile" id="mv1">
+	<property name="cost" value="19000"></property>
+	<property name="Brand" value="Vivo"></property>
+	<property name="RAMSize" value="6"></property>
+</bean>
+<bean class="com.kn.Spring4.Mobile" id="mv2">
+	<property name="cost" value="21000"></property>
+	<property name="Brand" value="Vivo"></property>
+	<property name="RAMSize" value="12"></property>
+</bean>
+</beans>
